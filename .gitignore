@@ -1,4 +1,15 @@
+### python - django
+*.py[co]
+*.sw[po]
+*.bak
+*.orig
+*~
+.project
+.pydevproject
+parts
+media/uploads
 
+### node
 lib-cov
 *.seed
 *.log
@@ -7,12 +18,14 @@ lib-cov
 *.out
 *.pid
 *.gz
-
 pids
-logs
 results
-
 node_modules
 npm-debug.log
 
+### devvv
 *.codekit
+tmp
+log
+logs
+.DS_Store
