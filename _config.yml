@@ -1,0 +1,47 @@
+# Where things are
+source:      .
+destination: .
+plugins:     ./_plugins
+layouts:     ./_layouts
+data_source: ./_data
+collections: null
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      []
+keep_files:   [".git"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+textile_ext:  "textile"
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      true
+unpublished: false
+
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Ruff Portal
+tagline:          'Ruff Portal'
+description:      'Ruff Portal : Automation and management system for dog rescues.'
+url:              https://dallaspetsalive.github.io/ruff-portal
+
+author:
+  name:           'DallasPetsAlive'
+  url:            https://github.com/DallasPetsAlive
+
+paginate:         5
+
+# Custom vars
+version:          0.0.1
+
+github:
+  repo:           https://github.com/DallasPetsAlive/ruff-portal
