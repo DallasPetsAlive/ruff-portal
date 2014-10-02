@@ -1,0 +1,31 @@
+### python - django
+*.py[co]
+*.sw[po]
+*.bak
+*.orig
+*~
+.project
+.pydevproject
+parts
+media/uploads
+
+### node
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+results
+node_modules
+npm-debug.log
+
+### devvv
+*.codekit
+tmp
+log
+logs
+.DS_Store
