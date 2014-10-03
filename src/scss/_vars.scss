@@ -1,0 +1,25 @@
+
+// COLOR PALETTE
+$ketchup-red 	: #DC3522;
+$sand   		: #D9CB9E;
+$stone-grey   	: #374140;
+$slate-grey     : #2A2C2B;
+$ink			: #1E1E20;
+$white			: #FFF;
+
+$grey-darker:            lighten(#000, 13.5%) !default; // #222
+$grey-dark:              lighten(#000, 20%) !default;   // #333
+$grey:                   lighten(#000, 33.5%) !default; // #555
+$grey-light:             lighten(#000, 46.7%) !default; // #777
+$grey-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+
+//** Background color for `<body>`.
+$body-bg:               $white !default;
+$text-color:            $grey-dark !default;
+
+//** Global textual link color.
+$link-color:            $ketchup-red !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+
+$font-family-header:	'Raleway', Helvetica, Arial, sans-serif;
