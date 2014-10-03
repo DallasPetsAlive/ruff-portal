@@ -25,7 +25,11 @@ npm-debug.log
 
 ### devvv
 *.codekit*
+.sass-cache*
 tmp
 log
 logs
 .DS_Store
+
+### jekyll
+_site
