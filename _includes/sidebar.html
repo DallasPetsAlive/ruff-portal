@@ -26,12 +26,9 @@
         {% endif %}
       {% endfor %}
 
-      <li class="sidebar-nav-item"><a href="{{ site.data.gitrepo }}/zipball/{{ site.data.version }}">Download .zip file</a></li>
-      <li class="sidebar-nav-item"><a href="{{ site.data.gitrepo }}/tarball/{{ site.data.version }}">Download .tar file</a></li>
-      <li class="sidebar-nav-item"><a href="{{ site.data.gitrepo }}">GitHub Project</a></li>
-      <li class="sidebar-nav-item">Currently v{{ site.data.version }}</li>
+      <li class="sidebar-nav-item"><a href="{{ site.data.gitrepo }}">github</a> : <a href="{{ site.data.gitrepo }}/zipball/{{ site.data.version }}">zip</a> or <a href="{{ site.data.gitrepo }}/tarball/{{ site.data.version }}">tar</a> </li>
     </ul>
-
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <p class="version">v{{ site.data.version }}</p>
+    <p class="copyright">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>

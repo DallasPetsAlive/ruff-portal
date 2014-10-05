@@ -21,31 +21,45 @@
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
-  background-color: $stone-grey;
-}
-@media (min-width: 48rem) {
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 18rem;
-    text-align: left;
-  }
+  color: lighten($brand-primary, 10%);
+  background-color: $sidebar-bg;
 }
 
 /* Sidebar links */
 .sidebar a {
-  color: #fff;
+  color: $link-color;
+  &.hover,
+  &:hover,
+  {
+    color: $link-color-hover;
+  }
+}
+
+.sidebar-nav-item
+{
+  &.active,
+  {
+    a
+    {
+      color: $link-color-hover;
+    }
+  }
 }
 
 /* About section */
-.sidebar-about h1 {
-  color: #fff;
-  margin-top: 0;
-  font-family: $font-family-header;
-  font-size: 3.25rem;
+.sidebar-about
+{
+  h1 {
+    color: $brand-accent;
+    margin-top: 0;
+    font-family: $font-family-display;
+    font-size: 3.25rem;
+    text-transform: uppercase;
+  }
+  .lead
+  {
+    font-size: 1.1rem;
+  }
 }
 
 /* Sidebar nav */
@@ -57,11 +71,20 @@
   display: block;
 }
 a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
+a.sidebar-nav-item:focus
+{
   text-decoration: underline;
 }
-.sidebar-nav-item.active {
-  font-weight: bold;
+
+@media (min-width: 48rem) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+  }
 }
 
 /* Sticky sidebar
@@ -106,7 +129,49 @@ a.sidebar-nav-item:focus {
   }
 }
 
+
+
+
+
+
+
+
 .content a,
 .related-posts li a:hover {
-  color: #75b5aa;
+  color: $brand-accent;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+{
+  // override
+  font-weight: normal;
+  font-family: $font-family-display;
+}
+
+.post-title,
+.pagination
+{
+  font-family: $font-family-display;
+}
+
+.lead
+{
+  font-family: $font-family-display;
+}
+
+.sidebar,
+.content
+{
+  font-family: $font-family-content;
+}
+
+.copyright
+{
+  font-size: 0.6rem;
+}
+
+.post-date
+{
+  color : $grey-light;
 }

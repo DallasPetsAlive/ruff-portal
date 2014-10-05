@@ -1,25 +1,48 @@
 
 // COLOR PALETTE
-$ketchup-red 	: #DC3522;
-$sand   		: #D9CB9E;
-$stone-grey   	: #374140;
+$sand           : #D9CB9E;
+$stone-grey     : #374140;
 $slate-grey     : #2A2C2B;
-$ink			: #1E1E20;
-$white			: #FFF;
+$ink            : #1E1E20;
+$cyan-900       : #006064;
+$cyan-A100      : #84ffff;
+$teal-A200      : #64ffda;
+$teal-A400      : #1de9b6;
+
+$pink-900       : #ff6f00;
+$pink-A700      : #ffab40;
+
+
+$RL-blue:   #1D2938;
+$RL-red:    #703030;
+$RL-grey:   #79827A;
+$RL-creme:  #FFF2CF;
+$RL-salmon: #C77966;
+
+$white:                 #FFF;
 
 $grey-darker:            lighten(#000, 13.5%) !default; // #222
 $grey-dark:              lighten(#000, 20%) !default;   // #333
 $grey:                   lighten(#000, 33.5%) !default; // #555
 $grey-light:             lighten(#000, 46.7%) !default; // #777
-$grey-lighter:           lighten(#000, 93.5%) !default; // #eee
+$grey-lighter:           lighten(#000, 74%) !default;   // #???
+$grey-lightest:          lighten(#000, 93.5%) !default; // #eee
 
 
-//** Background color for `<body>`.
-$body-bg:               $white !default;
-$text-color:            $grey-dark !default;
+// sidebar
+$sidebar-bg:                $RL-creme;
 
-//** Global textual link color.
-$link-color:            $ketchup-red !default;
-$link-hover-color:      darken($link-color, 15%) !default;
+$body-bg:                   $white !default;
+$text-color:                $grey-dark !default;
+$text-color-accent:         $grey-light !default;
+$text-color-hint:           $grey-lighter !default;
+$text-color-divider:        $grey-lightest !default;
+$link-color:                $RL-salmon !default;
+$link-color-hover:          darken($RL-salmon, 15%) !default;
 
-$font-family-header:	'Raleway', Helvetica, Arial, sans-serif;
+// theme
+$brand-primary:             $RL-blue !default;
+$brand-accent:              $RL-red !default;
+
+$font-family-display:       'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-family-content:       'Helvetica Neue', Helvetica, Arial, sans-serif !default;

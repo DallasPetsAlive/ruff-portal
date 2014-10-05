@@ -33,7 +33,7 @@ permalink:              pretty
 # Setup
 title:              Ruff Portal
 tagline:            'Ruff Portal'
-description:        'Ruff Portal : Automation and management system for dog rescues.'
+description:        'Automation and management system for dog rescues.'
 url:                https://dallaspetsalive.github.io/ruff-portal
 baseurl:            /
 

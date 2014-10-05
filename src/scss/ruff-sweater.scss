@@ -1,4 +1,11 @@
 
+// font-faces
+// @import url(http://fonts.googleapis.com/css?family=Vollkorn|Cinzel+Decorative:700);
+@import url(http://fonts.googleapis.com/css?family=Lato|Oswald:400,300);
+$font-family-display:       'Oswald', sans-serif;
+$font-family-content:       'Lato', sans-serif;
+
+
 // get vendor styles
 @import "libs/poole";
 
@@ -8,4 +15,3 @@
 @import "poole-override";
 
 // font-faces
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Raleway);
