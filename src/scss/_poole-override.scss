@@ -37,16 +37,6 @@
         color: $link-color-hover;
     }
 }
-.sidebar-nav-item
-{
-    &.active,
-    {
-        a
-        {
-            color: $link-color-hover;
-        }
-    }
-}
 /* About section */
 
 .sidebar-about
@@ -55,7 +45,7 @@
     {
         font-size: 3.25rem;
         margin-top: 0;
-        letter-spacing: .2rem;
+        letter-spacing: .3rem;
         text-transform: uppercase;
         color: $brand-accent;
     }
@@ -75,12 +65,20 @@
 .sidebar-nav-item
 {
     display: block;
+    &.active,
+    {
+        a
+        {
+            color: $link-color-hover;
+        }
+    }
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus
 {
     text-decoration: underline;
 }
+
 @media (min-width: 48rem)
 {
     .sidebar
@@ -89,9 +87,7 @@ a.sidebar-nav-item:focus
         top: 0;
         bottom: 0;
         left: 0;
-
         width: 18rem;
-
         text-align: left;
     }
 }
