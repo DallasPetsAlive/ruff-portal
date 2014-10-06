@@ -35,7 +35,7 @@ title:              Ruff Portal
 tagline:            'Ruff Portal'
 description:        'Automation and management system for dog rescues.'
 url:                https://dallaspetsalive.github.io/ruff-portal
-baseurl:            /
+baseurl:            /ruff-portal
 
 # Name of your blog (this will show up at the top of your page)
 author:             'DallasPetsAlive'
