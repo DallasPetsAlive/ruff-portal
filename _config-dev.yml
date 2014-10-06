@@ -7,7 +7,7 @@ data_source: ./_data
 collections: null
 
 # Handling Reading
-safe:         false
+safe:         true
 include:      [".htaccess"]
 exclude:      []
 keep_files:   [".git"]
@@ -28,7 +28,7 @@ highlighter:        true
 # Permalinks
 # Makes pretty (descriptive) permalinks. See Jekyll docs for alternatives.
 permalink:              pretty
-# relative_permalinks:    true
+relative_permalinks:    true
 
 # Setup
 title:              Ruff Portal
