@@ -17,12 +17,10 @@
 
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" %}
-            <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
-              <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
-            </li>
-          {% endif %}
+        {% if node.title != null and if node.layout == "page" %}
+          <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
+            <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+          </li>
         {% endif %}
       {% endfor %}
 
