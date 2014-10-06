@@ -1,0 +1,61 @@
+
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+.content
+{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.content a,
+.post-title,
+.page-title,
+.related-posts li a:hover
+{
+    color: $brand-accent;
+}
+
+.page-title,
+.post-title,
+{
+    letter-spacing: .2rem;
+}
+
+// special display
+.post-title,
+.page-title,
+.pagination,
+.lead,
+{
+    font-family: $font-family-display;
+}
+
+.post-date
+{
+    color: $grey-light;
+}
+
+/* MEDIA QUERIES
+///////////////////////////////////////////////////////////////////////// */
+
+@media (min-width: 48rem)
+{
+    .content
+    {
+        max-width: 38rem;
+        margin-right: 2rem;
+        margin-left: 20rem;
+    }
+}
+@media (min-width: 64rem)
+{
+    .content
+    {
+        margin-right: 4rem;
+        margin-left: 22rem;
+    }
+}

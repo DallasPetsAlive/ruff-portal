@@ -12,134 +12,8 @@
         font-size: 20px;
     }
 }
-/*
- * Sidebar
- *
- * Flexible banner for housing site name, intro, and "footer" content. Starts
- * out above content in mobile and later moves to the side with wider viewports.
- */
 
-.sidebar
-{
-    padding: 2rem 1rem;
-    text-align: center;
-    color: lighten($brand-primary, 10%);
-    background-color: $sidebar-bg;
-}
-/* Sidebar links */
-
-.sidebar a
-{
-    color: $link-color;
-    &.hover,
-    &:hover,
-    {
-        color: $link-color-hover;
-    }
-}
-/* About section */
-
-.sidebar-about
-{
-    h1
-    {
-        font-size: 3.25rem;
-        margin-top: 0;
-        letter-spacing: .3rem;
-        text-transform: uppercase;
-        color: $brand-accent;
-    }
-    .lead
-    {
-        font-size: 1.1rem;
-    }
-}
-/* Sidebar nav */
-
-.sidebar-nav
-{
-    padding-left: 0;
-
-    list-style: none;
-}
-.sidebar-nav-item
-{
-    display: block;
-    &.active,
-    {
-        a
-        {
-            color: $link-color-hover;
-        }
-    }
-}
-a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus
-{
-    text-decoration: underline;
-}
-
-@media (min-width: 48rem)
-{
-    .sidebar
-    {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 18rem;
-        text-align: left;
-    }
-}
-/* Sticky sidebar
- *
- * Add the `sidebar-sticky` class to the sidebar's container to affix it the
- * contents to the bottom of the sidebar in tablets and up.
- */
-
-@media (min-width: 48rem)
-{
-    .sidebar-sticky
-    {
-        position: absolute;
-        right: 1rem;
-        bottom: 1rem;
-        left: 1rem;
-    }
-}
-/* Container
- *
- * Align the contents of the site above the proper threshold with some margin-fu
- * with a 25%-wide `.sidebar`.
- */
-
-.content
-{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-@media (min-width: 48rem)
-{
-    .content
-    {
-        max-width: 38rem;
-        margin-right: 2rem;
-        margin-left: 20rem;
-    }
-}
-@media (min-width: 64rem)
-{
-    .content
-    {
-        margin-right: 4rem;
-        margin-left: 22rem;
-    }
-}
-.content a,
-.related-posts li a:hover
-{
-    color: $brand-accent;
-}
+/* global override of display items */
 h1,
 h2,
 h3,
@@ -149,31 +23,11 @@ h6,
 {
     font-family: $font-family-display;
     // override
-    font-weight: normal;
+    font-weight: 400;
 }
-.post-title
-{
-    letter-spacing: .2rem;
-}
-.post-title,
-.pagination
-{
-    font-family: $font-family-display;
-}
-.lead
-{
-    font-family: $font-family-display;
-}
+
 .sidebar,
 .content
 {
     font-family: $font-family-content;
-}
-.copyright
-{
-    font-size: .6rem;
-}
-.post-date
-{
-    color: $grey-light;
 }
