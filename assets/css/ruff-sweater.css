@@ -390,8 +390,8 @@ a.pagination-item:hover {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 .sidebar {
-  text-align: center;
   padding: 2rem 1rem;
+  text-align: center;
   color: #2e425a;
   background-color: #FFF2CF; }
 
@@ -406,11 +406,11 @@ a.pagination-item:hover {
 
 /* About section */
 .sidebar-about h1 {
-  color: #703030;
-  margin-top: 0;
-  font-family: "Oswald", sans-serif;
   font-size: 3.25rem;
-  text-transform: uppercase; }
+  margin-top: 0;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  color: #703030; }
 .sidebar-about .lead {
   font-size: 1.1rem; }
 
@@ -430,8 +430,8 @@ a.sidebar-nav-item:focus {
   .sidebar {
     position: fixed;
     top: 0;
-    left: 0;
     bottom: 0;
+    left: 0;
     width: 18rem;
     text-align: left; } }
 /* Sticky sidebar
@@ -457,19 +457,27 @@ a.sidebar-nav-item:focus {
 @media (min-width: 48rem) {
   .content {
     max-width: 38rem;
-    margin-left: 20rem;
-    margin-right: 2rem; } }
+    margin-right: 2rem;
+    margin-left: 20rem; } }
 @media (min-width: 64rem) {
   .content {
-    margin-left: 22rem;
-    margin-right: 4rem; } }
+    margin-right: 4rem;
+    margin-left: 22rem; } }
 .content a,
 .related-posts li a:hover {
   color: #703030; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: "Oswald", sans-serif; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal; }
+
+.post-title {
+  letter-spacing: .2rem; }
 
 .post-title,
 .pagination {
@@ -483,7 +491,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif; }
 
 .copyright {
-  font-size: 0.6rem; }
+  font-size: .6rem; }
 
 .post-date {
   color: #777777; }
