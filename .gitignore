@@ -8,6 +8,7 @@
 .pydevproject
 parts
 media/uploads
+sqlite.db
 
 ### node
 lib-cov
