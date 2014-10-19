@@ -1,0 +1,1 @@
+Search.setIndex({envversion:42,terms:{content:0,index:0,modul:0,search:0,page:0},objtypes:{},objnames:{},filenames:["index","modules/models"],titles:["Welcome to Ruff Portal&#8217;s documentation!","&lt;no title&gt;"],objects:{},titleterms:{welcom:0,indic:0,ruff:0,portal:0,tabl:0,document:0}})
