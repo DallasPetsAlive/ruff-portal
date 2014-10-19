@@ -9,6 +9,7 @@
 parts
 media/uploads
 sqlite.db
+db.sqlite3
 
 ### node
 lib-cov
