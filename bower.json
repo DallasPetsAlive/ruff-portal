@@ -1,0 +1,17 @@
+{
+    "name": "ruff-portal",
+    "version": "0.0.1",
+    "dependencies":
+    {
+        "requirejs": "~2.1.15",
+        "modernizr": "~2.8.3",
+        "jquery": "~2.1.1",
+        "bootstrap-sass-official": "~3.2.0"
+    },
+
+    "homepage": "",
+    "description": "",
+    "authors": [],
+
+    "private": true
+}
