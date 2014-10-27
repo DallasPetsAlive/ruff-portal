@@ -1,0 +1,27 @@
+{% extends "_layouts/base.html" %}
+
+{% block css %}
+{{block.super}}
+  {# custom styles here -- use <link> loads... -_- #}
+{% endblock css %}
+
+{% block page_title %}app title{% endblock %}
+{% block page_class %}body-landing{% endblock %}
+
+{% block content %}
+
+  <div class="container">
+
+    <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Sign In</h2>
+        <input type="email" class="form-control" placeholder="Email address" required autofocus />
+        <input type="password" class="form-control" placeholder="Password" required />
+        <div class="checkbox">
+            <label><input type="checkbox" value="remember-me" /> Remember me</label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+    </div> <!-- /container -->
+
+{% endblock %}

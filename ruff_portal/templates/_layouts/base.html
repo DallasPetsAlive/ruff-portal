@@ -1,0 +1,42 @@
+{# just in case... {% load compress %} #}
+{% load staticfiles %}
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    {% block meta %} {% endblock %}
+
+    <title>{% block page_title %}{{ _('the site') }}{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    <meta name="author" content="{% block meta_author %}{% endblock %}">
+
+</head>
+
+<body class="{% block body_class %}{% endblock %}" {% block body_attributes %}{% endblock %}>
+    {% block body %}
+    <header>
+        {% include "base-navbar.html" %}
+        {% block header %}{% endblock %}
+    </header>
+
+    <div role="main">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        {% block footer %}
+        <div class="container">
+            <hr>
+            <p></p>
+        </div>
+        {% endblock footer %}
+    </footer>
+
+    {% endblock %}
+</body>
+
+</html>
