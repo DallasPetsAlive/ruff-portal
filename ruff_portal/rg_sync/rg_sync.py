@@ -11,12 +11,38 @@ class RGSync:
         self.config.read('rg_sync/rg_config.ini')
 
         self.url = self.config.get('account', 'url')
-        self.api_key = self.config.get('account', 'apiKey')
+        self.username = self.config.get('account', 'username')
+        self.password = self.config.get('account', 'password')
+        self.accountNum = self.config.get('account', 'accountNum')
+
+        self.token = ''
+        self.tokenHash = ''
+
+        self.login()
         pass
+
+    def login(self):
+        api_args = {
+            'username': self.username,
+            'password': self.password,
+            'accountNumber': self.accountNum,
+            'action': 'login'
+        }
+        api_args = json.dumps(api_args)
+
+        # Send the request
+        request = requests.post(self.url, data=api_args)
+        request_txt = json.loads(request.text)
+
+        data=request_txt['data']
+
+        self.token = data['token']
+        self.tokenHash = data['tokenHash']
 
     def get_available_animals(self):
         # Form the JSON msg body
-        api_args = {'apikey': self.api_key,
+        api_args = {'token': self.token,
+                    'tokenHash': self.tokenHash,
                     'objectType': 'animals',
                     'objectAction': 'publicSearch',
                     'search': {
