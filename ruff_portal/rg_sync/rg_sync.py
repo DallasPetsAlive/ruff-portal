@@ -45,7 +45,7 @@ class RGSync:
                 item = int(item)
                 # Add animals that aren't already in DB
                 if item not in animals_in_db_ids:
-                    print "adding " + item
+                    print "adding " + str(item)
                     animal = Animal(rg_id=item)
                     animal.save()
 
