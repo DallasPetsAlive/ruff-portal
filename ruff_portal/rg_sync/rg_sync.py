@@ -1,14 +1,17 @@
 import requests
 import json
+import ConfigParser
 from .models import Animal
 
 
 class RGSync:
     def __init__(self):
         # Set the rescue groups URL and API key
-        # TODO put this in a config file
-        self.url = "https://api.rescuegroups.org/http/json"
-        self.api_key = "QltdwQc9"
+        self.config = ConfigParser.ConfigParser()
+        self.config.read('rg_sync/rg_config.ini')
+
+        self.url = self.config.get('account', 'url')
+        self.api_key = self.config.get('account', 'apiKey')
         pass
 
     def get_available_animals(self):
@@ -48,7 +51,6 @@ class RGSync:
                     print "adding " + str(item)
                     animal = Animal(rg_id=item)
                     animal.save()
-
             return_txt = "okay"
         else:
             return_txt = "error"
