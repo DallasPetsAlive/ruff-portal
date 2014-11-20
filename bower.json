@@ -1,17 +1,24 @@
 {
     "name": "ruff-portal",
     "version": "0.0.1",
-    "dependencies":
-    {
+    "homepage": "https://github.com/DallasPetsAlive/ruff-portal",
+    "authors": [
+        ""
+    ],
+    "description": "The Ruff Portal is a rescue management web system built for Dallas Pets Alive",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "license": "",
+    "private": true,
+    "dependencies": {
         "requirejs": "~2.1.x",
         "modernizr": "~2.8.x",
         "jquery": "~2.1.x",
         "bootstrap-sass-official": "~3.3.x"
-    },
-
-    "homepage": "",
-    "description": "",
-    "authors": [],
-
-    "private": true
+    }
 }
