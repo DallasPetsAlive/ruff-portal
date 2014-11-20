@@ -3,10 +3,10 @@
     "version": "0.0.1",
     "dependencies":
     {
-        "requirejs": "~2.1.15",
-        "modernizr": "~2.8.3",
-        "jquery": "~2.1.1",
-        "bootstrap-sass-official": "~3.2.0"
+        "requirejs": "~2.1.x",
+        "modernizr": "~2.8.x",
+        "jquery": "~2.1.x",
+        "bootstrap-sass-official": "~3.3.x"
     },
 
     "homepage": "",
